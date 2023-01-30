@@ -1,3 +1,4 @@
+'use strict';
 let preprocessor = 'sass'; // Preprocessor (sass, scss, less, styl)
 
 const { src, dest, parallel, series, watch } = require('gulp');
@@ -8,19 +9,18 @@ const browserSync    = require('browser-sync').create();
 const uglify         = require('gulp-uglify-es').default;
 const autoprefixer   = require('gulp-autoprefixer');
 var minifyHTML       = require('gulp-minify-html');
-var changed          = require('gulp-changed');
 var rename           = require('gulp-rename');
 const fileinclude    = require('gulp-file-include');
 
 // Local Server
 function browsersync() {
-    browserSync.init({
+    browserSync.init(null, {
         server: { baseDir: 'dist/' },
-        index: 'index.html',
+        directory: true,
         notify: false,
         // online: false, // Work offline without internet connection
     })
-    browserSync.watch('dist/index.html').on('change', browserSync.reload);
+    console.log("finshed browser ");
 }
 
 // Custom Styles
