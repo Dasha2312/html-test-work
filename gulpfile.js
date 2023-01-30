@@ -19,6 +19,7 @@ function browsersync() {
         notify: false,
         // online: false, // Work offline without internet connection
     })
+    watch("dist/*.html").on('change', browserSync.reload);
 }
 
 // Custom Styles
