@@ -96,7 +96,7 @@ function startwatch() {
     watch(['src/**/*.js'], parallel('scripts'));
     watch(['src/img/*.*', 'src/img/**/*.*'], parallel('img'));
     watch(['src/components/**/*.html', 'src/views/*.html'], parallel('html'));
-    watch('dist/**/*.*').on('change', browserSync.reload);
+    watch('dist/*.*').on('change', browserSync.reload);
 }
 
 exports.browsersync = browsersync;
