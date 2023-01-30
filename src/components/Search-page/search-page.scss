@@ -274,6 +274,12 @@
             margin-right: 5px;
         }
     }
+    .amenities-icon {
+        stroke: #9CA3AF;
+        &.active {
+            stroke: #6366F1;
+        }
+    }
     .input-block {
         padding-left: 20px;
         min-width: 46px;
