@@ -15,15 +15,13 @@ const fileinclude    = require('gulp-file-include');
 // Local Server
 function browsersync() {
     browserSync.init({
-        server: { baseDir: 'dist/' },
-        startPath: "index.html",
+        server: { baseDir: 'dist' },
         notify: false,
         // online: false, // Work offline without internet connection
     })
 }
 
 // Custom Styles
-
 function styles() {
     return src(['src/style/main.scss'])
     .pipe(eval(preprocessor)())
@@ -35,9 +33,8 @@ function styles() {
 }
 
 //HTML
-
 function html() {
-    return src(['src/views/*.html', 'src/index.html'], { allowEmpty: true })
+    return src(['src/views/*.html', 'src/index.html'])
     // .pipe(changed('src/blocks/**/*.{htm,html}'))
     .pipe(fileinclude({
       prefix: '@@',
@@ -96,7 +93,6 @@ function startwatch() {
     watch(['src/**/*.js'], parallel('scripts'));
     watch(['src/img/*.*', 'src/img/**/*.*'], parallel('img'));
     watch(['src/components/**/*.html', 'src/views/*.html'], parallel('html'));
-    watch('dist/*.*').on('change', browserSync.reload);
 }
 
 exports.browsersync = browsersync;
