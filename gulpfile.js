@@ -15,8 +15,8 @@ const fileinclude    = require('gulp-file-include');
 // Local Server
 function browsersync() {
     browserSync.init({
-        server: { baseDir: 'dist' },
-        startPath: "/index.html",
+        server: { baseDir: 'dist/' },
+        startPath: "index.html",
         notify: false,
         // online: false, // Work offline without internet connection
     })
@@ -50,7 +50,6 @@ function html() {
 }
 
 //Libraries CSS
-
 function css() {
     return src([
         'node_modules/bootstrap/dist/css/bootstrap.min.css',
@@ -69,7 +68,6 @@ function css() {
 }
 
 // Scripts & JS Libraries
-
 function scripts() {
     return src([
         'node_modules/jquery/dist/jquery.min.js',
@@ -86,29 +84,18 @@ function scripts() {
     .pipe(browserSync.stream())
 }
 
-
 //Images
 function img() {
     return src(['src/img/**/*.*', 'src/img/*.*'])
     .pipe(dest('dist/img'))
 }
 
-
-//Fonts
-function fonts() {
-    return src('src/fonts/*.*')
-    .pipe(dest('dist/fonts'))
-}
-
-
 // Watching
-
 function startwatch() {
     watch('src/**/*.scss', parallel('styles'));
     watch(['src/**/*.js'], parallel('scripts'));
     watch(['src/img/*.*', 'src/img/**/*.*'], parallel('img'));
     watch(['src/components/**/*.html', 'src/views/*.html'], parallel('html'));
-    watch(['src/fonts/*.*'], parallel('fonts'));
 }
 
 exports.browsersync = browsersync;
@@ -117,6 +104,5 @@ exports.css         = css;
 exports.img         = img;
 exports.html        = html;
 exports.styles      = styles;
-exports.fonts       = fonts;
 exports.scripts     = scripts;
-exports.default     = parallel(html, styles, scripts, img, css, fonts, browsersync, startwatch);
+exports.default     = parallel(html, styles, scripts, img, css, browsersync, startwatch);
