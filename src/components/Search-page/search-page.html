@@ -1,0 +1,1036 @@
+<div class="search-header">
+	<div class="search-tab d-flex align-items-center justify-content-between">
+		<ul class="nav nav-tabs search-tab__nav" id="SearchTab" role="tablist">
+			<li class="nav-item" role="presentation">
+				<button class="nav-link active d-flex align-items-center text-uppercase" id="hotels-tab" data-bs-toggle="tab" data-bs-target="#hotels-tab-pane" type="button" role="tab" aria-controls="hotels-tab-pane" aria-selected="true">
+					Hotels
+					<span class="search-tab__counter">170,802</span>
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link d-flex align-items-center text-uppercase" id="cruises-tab" data-bs-toggle="tab" data-bs-target="#cruises-tab-pane" type="button" role="tab" aria-controls="cruises-tab-pane" aria-selected="false">
+					Cruises
+					<span class="search-tab__counter">57</span>
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link d-flex align-items-center text-uppercase" id="tours-tab" data-bs-toggle="tab" data-bs-target="#tours-tab-pane" type="button" role="tab" aria-controls="tours-tab-pane" aria-selected="false">
+					Tours
+					<span class="search-tab__counter">9</span>
+				</button>
+			</li>
+			<li class="nav-item" role="presentation">
+				<button class="nav-link d-flex align-items-center text-uppercase" id="cars-tab" data-bs-toggle="tab" data-bs-target="#cars-tab-pane" type="button" role="tab" aria-controls="cars-tab-pane" aria-selected="false">
+					Cars
+					<span class="search-tab__counter">13</span>
+				</button>
+			</li>
+		</ul>
+		<button type="button" class="btn btn-primary new-supply__btn d-flex align-items-center">
+			<svg viewBox="0 0 20 20" width="20"  class="new-supply__btn-icon">
+				<use href="img/icons/plus.svg#plus"></use>
+			</svg>
+			New Supply
+		</button>
+	</div>
+
+	<div class="filter-row">
+		<div class="d-xxl-flex d-xl-flex d-lg-flex">
+			<div class="filter-row__block d-flex">
+				<div class="filter-row__input">
+					<input type="text" placeholder="Search items" class="search-input">
+				</div>
+				<button type="button" class="filter-btn" data-bs-toggle="modal" data-bs-target="#filter-mobile">
+					<svg viewBox="0 0 20 20" width="20"  class="filter-btn__icon">
+						<use href="img/icons/filter.svg#filter"></use>
+					</svg>
+					Filters
+				</button>		  
+			</div>
+			<div class="filter-row__block">
+				<div class="filter-row__block-buttons d-flex">
+					<button type="button" class="filter-row__btn">
+						Check In
+					</button>
+					<button type="button" class="filter-row__btn">
+						Check Out
+					</button>
+					<div class="btn-group filter-row__btn">
+						<button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+							Guests
+						</button>
+						<ul class="dropdown-menu dropdown-menu-start filter-row__drop-menu">
+							<li><a class="dropdown-item" href="#">Colin Nelson</a></li>
+							<li><a class="dropdown-item" href="#">Gresham Carr</a></li>
+							<li><a class="dropdown-item" href="#">Virgil Grant</a></li>
+							<li><a class="dropdown-item" href="#">Gilbert Hopkins</a></li>
+							<li><a class="dropdown-item" href="#">Sarah Lamb</a></li>
+							<li><a class="dropdown-item" href="#">Dennis Dinwiddie</a></li>
+							<li><a class="dropdown-item" href="#">Mia Pope</a></li>
+							<li><a class="dropdown-item" href="#">Jessica Bird</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="tab-content search-tab__content" id="SearchTabContent">
+	<div class="tab-pane fade show active" id="hotels-tab-pane" role="tabpanel" aria-labelledby="hotels-tab" tabindex="0">
+		<div class="table-responsive">
+			<table class="table search-table">
+				<thead>
+					<tr class="bg-light table-row">
+					  	<th scope="col" class="input-block">
+							<input id="select_all_checkboxes" class="form-check-input" type="checkbox">
+						</th>
+						<th scope="col"class="name-block sorting_asc">
+							<span class="sorting">Name</span>
+						</th>
+						<th scope="col" class="supplier-block sorting_desc">
+							<span class="sorting">Supplier</span></th>
+						<th scope="col" class="location-block">
+							<span class="sorting">Location</span>
+						</th>
+						<th scope="col" class="vibe-block">
+							<span class="sorting">Vibe</span>
+						</th>
+						<th scope="col" class="perks-block">
+							<span class="sorting">Perks</span>
+						</th>
+						<th scope="col" class="from-block">
+							<span class="sorting">From</span>
+						</th>
+						<th scope="col" class="amenities-block">Amenities</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Paris, France</div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Virtuoso
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Amsterdam, Netherland </div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Virtuoso
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Amsterdam, Netherland </div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Fairmont Plus
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Bangkok, Thailand</div>
+						</td>
+						<td>
+							Comfortable Beach
+						</td>
+						<td>
+							<span class="status success">
+								Multiple
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Paris, France</div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Virtuoso
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Amsterdam, Netherland </div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Virtuoso
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Amsterdam, Netherland </div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Fairmont Plus
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Bangkok, Thailand</div>
+						</td>
+						<td>
+							Comfortable Beach
+						</td>
+						<td>
+							<span class="status success">
+								Multiple
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Paris, France</div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Virtuoso
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Amsterdam, Netherland </div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Virtuoso
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Amsterdam, Netherland </div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Fairmont Plus
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Bangkok, Thailand</div>
+						</td>
+						<td>
+							Comfortable Beach
+						</td>
+						<td>
+							<span class="status success">
+								Multiple
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Amsterdam, Netherland </div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Fairmont Plus
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Bangkok, Thailand</div>
+						</td>
+						<td>
+							Comfortable Beach
+						</td>
+						<td>
+							<span class="status success">
+								Multiple
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Paris, France</div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Virtuoso
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Amsterdam, Netherland </div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Virtuoso
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Amsterdam, Netherland </div>
+						</td>
+						<td>
+							Sophisticated
+						</td>
+						<td>
+							<span class="status success">
+								Fairmont Plus
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td scope="row" class="input-block">
+							<input class="table-check-input form-check-input" type="checkbox">
+						</td>
+						<td>
+							<a href="#" class="search-table-link">
+								Grand Hotel du Palais Royal
+							</a>
+						</td>
+						<td>
+							Fairmont
+						</td>
+						<td class="text-block">
+							<div>Bangkok, Thailand</div>
+						</td>
+						<td>
+							Comfortable Beach
+						</td>
+						<td>
+							<span class="status success">
+								Multiple
+							</span>
+						</td>
+						<td>
+							<div class="d-flex">
+								<span class="currency">US$</span>
+								10.5k
+							</div>
+						</td>
+						<td>
+							<div class="d-flex align-items-center">
+								<span class="amenities-icon" title="jump-rope">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon" >
+										<use href="img/icons/jump-rope.svg#jump-rope"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="swimming">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/swimming.svg#swimming"></use>
+									</svg>
+								</span>
+								<span class="amenities-icon" title="pizza">
+									<svg viewBox="0 0 16 16" width="16"  class="search-table-icon">
+										<use href="img/icons/pizza.svg#pizza"></use>
+									</svg>
+								</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="search-table__bottom">
+			<div class="search-table__bottom-inner">
+				<div class="search-table__bottom-left">
+					Showing <strong>1</strong> to <strong>20</strong> of 170,802 results
+				</div>
+				<div class="search-table__bottom-right d-flex align-items-center">
+					<div class="block-rows d-flex align-items-centers">
+						<div>Rows per page: </div>
+						<select class="form-select rows-select form-select-sm">
+							<option value="10" selected>10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="All">All</option>
+						</select>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="prev-btn table-btn">Previous</button>
+						<button type="button" class="next-btn table-btn">Next</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tab-pane fade" id="cruises-tab-pane" role="tabpanel" aria-labelledby="cruises-tab" tabindex="0">
+		<div class="container-fluid">
+			Cruises
+		</div>
+	</div>
+	<div class="tab-pane fade" id="tours-tab-pane" role="tabpanel" aria-labelledby="tours-tab" tabindex="0">
+		<div class="container-fluid">
+			Tours
+		</div>
+	</div>
+	<div class="tab-pane fade" id="cars-tab-pane" role="tabpanel" aria-labelledby="cars-tab" tabindex="0">
+		<div class="container-fluid">
+			Cars
+		</div>
+	</div>
+</div>
+
+@@include('../Modals/filter-modal.html')

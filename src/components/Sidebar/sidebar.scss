@@ -1,0 +1,117 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    @media(max-width: 1024px) {
+        width: 200px;
+    }
+    @media (max-width: 991px) {
+        transform: translateX(-100%);
+        transition: 0.5s;
+        width: 255px;
+        z-index: 999;
+    }
+    &.show {
+        transform: translateX(0);
+        transition: 0.5s;
+        background: rgba($color: #000000, $alpha: 0.5);
+        width: 100%;
+    }
+    &__inner {
+        padding: 20px 0;
+        width: 255px;
+        background: #1F2937;
+    }
+    &__logo {
+        padding: 7px 16px;
+        margin-bottom: 20px;
+    }
+    &_nav-blocks {
+        overflow: auto;
+    }
+    &__nav-block {
+        padding: 0 8px;
+        &.first {
+            .sidebar__nav-icon {
+                stroke: #D1D5DB;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 28px;
+        }
+     }
+    &__nav-title {
+        padding: 0 12px;
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #6B7280;
+    }
+    &__nav-items {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    &__nav-item {
+        &.active {
+            .sidebar__nav-link {
+                background: #4B5563;
+                color: #FFFFFF;
+            }
+            .sidebar__nav-icon {
+                stroke: #fff;
+                &.fill {
+                    stroke: none;
+                    fill: #fff;
+                }
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+    &__nav-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 500;
+        color: #D1D5DB;
+        padding: 8px;
+        background: transparent;
+        border-radius: 8px;
+        transition: 0.5s;
+        &:hover {
+            color: #fff;
+            transition: 0.5s;
+            .sidebar__nav-icon {
+                stroke: #fff;
+                transition: 0.5s;
+                &.fill {
+                    stroke: none;
+                    fill: #fff;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+    &__nav-icon {
+        margin-right: 12px;
+        stroke: #9CA3AF;
+        &.fill {
+            stroke: none;
+            fill: #9CA3AF;
+        }
+    }
+
+    &__footer {
+        // position: fixed;
+        position: absolute;
+        width: 100%;
+        bottom: 20px;
+        // padding-bottom: 20px;
+        background: #1f2937;
+    }
+}

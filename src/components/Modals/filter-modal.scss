@@ -1,0 +1,17 @@
+.filter-mobile {
+    &__text {
+        line-height: 17px;
+        color: #6B7280;
+        margin-bottom: 15px;
+    }
+    &__block {
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+        &-title {
+            line-height: 17px;
+            margin-bottom: 8px;
+            color: #171C26;
+        }
+    }
+}

@@ -1,0 +1,5 @@
+<svg width="16" height="16" viewBox="0 0 16 16" id="jump-rope" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 9.33334V5.33334C4 4.22877 4.89543 3.33334 6 3.33334C7.10457 3.33334 8 4.22877 8 5.33334V10.6667C8 11.7712 8.89543 12.6667 10 12.6667C11.1046 12.6667 12 11.7712 12 10.6667V6.66668" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="10.6667" y="2" width="2.66667" height="4.66667" rx="1.33333" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="2.66669" y="9.33334" width="2.66667" height="4.66667" rx="1.33333" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
