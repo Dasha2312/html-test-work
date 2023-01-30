@@ -202,15 +202,15 @@
     thead {
         th {
             padding: 7px 10px;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #687182;
+            font-family: 'Inter', sans-serif;
             & .sorting {
                 padding-right: 15px;
                 position: relative;
-                font-size: 12px;
-                font-weight: 500;
-                letter-spacing: 0.03em;
-                text-transform: uppercase;
-                color: #687182;
-                font-family: 'Inter', sans-serif;
                 cursor: pointer;
                 &:after,
                 &:before {
