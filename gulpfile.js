@@ -15,8 +15,8 @@ const fileinclude    = require('gulp-file-include');
 // Local Server
 function browsersync() {
     browserSync.init({
-        server: { baseDir: 'dist/' },
-        index: "index.html",
+        server: { baseDir: 'dist' },
+        startPath: "/index.html",
         notify: false,
         // online: false, // Work offline without internet connection
     })
